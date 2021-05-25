@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+}
+nav li {
+    margin: 10px;
+}
+.jumbotron {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.hero-image img {
+    width: 400px;
+}
+.jumbotron input {
+    margin: auto;
+}
+.searchbar {
+    width: 100%;
+    max-width: 480px;
+    display: inline-flex;
+}
+.searchbar__input {
+    flex-grow: 1;
+    padding: 11px;
+    outline: none;
+    border: 1px solid #0099ff;
+    border-radius: 5px 0 0 5px;
+    background: #f9fdff;
+    transition: background 0.25s, box-shadow 0.25s;
+}
+.searchbar__input:focus {
+    background: white;
+    box-shadow: 0 0 2px #71aacf;
+}
+.searchbar__input::placeholder {
+    color: #71aacf;
+}
+.searchbar__button {
+    width: 48px;
+    background: #0099ff;
+    color: white;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    user-select: none;
+}
+.searchbar__button:active {
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
+}
+.searchbar__button:focus {
+    outline: none;
+}
+#topRated {
+    margin: 0 20px 0 20px;
+}
+.card {
+    margin-bottom: 20px;
+}
+footer {
+    margin: 20px;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+
+@media (max-width: 1209px) {
+    .hero-image img {
+        width: 450px;
+    }
+}
+@media (max-width: 991px) {
+    .jumbotron {
+        text-align: center;
+    }
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+    .jumbotron p {
+        font-size: 17px;
+    }
+    .hero-image img {
+        width: 350px;
+        margin-top: 40px;
+    }
+}
+@media (max-width: 576px) {
+    .jumbotron {
+        height: 510px;
+    }
+    #resultsHero {
+        height: 550px;
+    }
+    .hero-image img {
+        width: 300px;
+    }
+}
+@media (max-width: 400px) { 
+    .hero-image img {
+        width: 200px;
+        margin-top: 30px;
+    }
+}
+/* @media (max-width: 350px) {
+    .hero-image img {
+        width: 200px;
+    }
+} */
+
+/* Results page */
+#resultsSearch {
+    margin: 60px 30px 0 30px;
+}
+#resultsHeader {
+    margin: 40px 40px 20px 40px;
+}
+#resultsHeroText {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#results {
+    padding: 0 40px 0 40px;
+}
+#restaurantName {
+    height: 20px;
+}
+.card-text {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    #view, .remove {
+        height: 48px; 
+        padding-top: 12px; 
+    }
+}
+
+
+/* Details page*/
+.container-header {
+    padding-top: 20px;
+}
+#detailsHeader {
+    margin-left: 7.2%;
+    margin-bottom: 20px;
+    display: inline-block;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+#save {
+    border: none;
+    background: none;
+    color: black;
+    display: block;
+    font-size: 20px;
+    padding: 14px;
+    cursor: pointer;
+    float: right;
+    margin-right: 7%;
+    margin-top: -5px;
+}
+#save:focus {
+    outline: none;
+}
+.carousel-inner, .controls{
+    margin:auto;
+    width: 80%;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.controls {
+    background-color: white;
+}
+#infoSection, #infoSection2 {
+    height: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+    background: #fff;
+    padding: 24px;
+    margin-right: 40px;
+    margin-left: -40px;
+}
+#info1Header, #info2Header {
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    padding-bottom: 16px;
+}
+#priceRange, #cuisines {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    font-size: 12px;
+    line-height: 16px;
+}
+#cuisines {
+    margin-top: 20px;
+}
+#section1, #section2, #section3, #section4, #section5 {
+    font-size: 14px;
+    line-height: 18px;
+}
+#section3, #section4, #section5 {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 767px) {
+    #detailsHeader {
+        margin-left: 15%;
+    }
+    #infoSection {
+        margin: 0 0 0 20px;
+    }
+    #infoSection2 {
+        margin: 0 20px 0 0;
+    }
+    .info, .info2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #save {
+        margin-right: 24%;
+    }
+}
+@media (max-width: 576px) {
+    #infoSection, #infoSection2 {
+        width: 80%;
+    }
+    #infoSection {
+        margin: 20px auto 20px auto;
+    }
+    #infoSection2 {
+        margin: auto;
+    }
+    .info {
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .info2 {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+/* Login */
+.main-form {
+    font-size: 12px;
+    width: 40%;
+    margin: auto;
+    padding: 40px 0 40px;
+}
+.form-check {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 992px) {
+    .main-form {
+        width: 60%;
+    }
+}
+@media (max-width: 576px) {
+    .main-form {
+        width: 80%;
+    }
+}
+
+/* Profile */
+@media (max-width: 767px) {
+    #savedRestaurantsCol {
+        margin-top: 0!important;
+    }
+}
+
+/* Contact */
+.contact-form {
+    font-size: 12px;
+}
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #e0e0e0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+

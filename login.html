@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <!--Fonts-->
+    <script src="https://kit.fontawesome.com/a77e4ef276.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://static.tacdn.com/css2/webfonts/TripSans/TripSans.css?v1.002" crossorigin="">
+</head>
+
+<body style="background-color: #e9ecef;">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a href="index.html" class="navbar-brand">eatee</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarMenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto" id="navbarLinks">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="results.html" class="nav-link">Restaurants</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li id="signUpBtn"><a class="btn btn-outline-primary" href="login.html">Sign up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h3 class="text-center mt-5"><strong>Sign Up</strong></h3>
+        <form action="index.html" class="main-form needs-validation" novalidate> <!-- "novalidate" hindrar vanlig browser validation-->
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="firstname">First name</label>
+                        <input type="text" name="firstname" id="firstname" class="form-control" required> <!--"required" gör att den måste vara ifylld-->
+                        <div class="invalid-feedback">Please enter your first name</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="lastname">Last name</label>
+                        <input type="text" name="lastname" id="lastname" class="form-control" required>
+                        <div class="invalid-feedback">Please enter your last name</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" class="form-control" required>
+                <div class="invalid-feedback">Please enter a valid username</div>
+            </div>
+            <div class="form-group">
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="e-mail" id="e-mail" class="form-control" required>
+                <div class="invalid-feedback">Please enter a valid e-mail address</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" required>
+                <div class="invalid-feedback">Please enter a password</div>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" class="form-control">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="accept-terms" class="form-check-input" required>
+                <label for="accept-terms" class="form-check-label">Accept Terms &amp; Conditions</label>
+                <div class="invalid-feedback">You must agree before submitting</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                <div class="row">
+                    <div class="col-12 col-md">
+                        <h5>eatee</h5>
+                        <small class="d-block mb-3 text-muted">&copy; 2021</small>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Features</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="#">Cool stuff</a></li>
+                            <li><a class="text-muted" href="#">Random feature</a></li>
+                            <li><a class="text-muted" href="#">Team feature</a></li>
+                            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                            <li><a class="text-muted" href="#">Another one</a></li>
+                            <li><a class="text-muted" href="#">Last time</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Resources</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="#">Resource</a></li>
+                            <li><a class="text-muted" href="#">Resource name</a></li>
+                            <li><a class="text-muted" href="#">Another resource</a></li>
+                            <li><a class="text-muted" href="#">Final resource</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>About</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="#">Team</a></li>
+                            <li><a class="text-muted" href="#">Locations</a></li>
+                            <li><a class="text-muted" href="#">Privacy</a></li>
+                            <li><a class="text-muted" href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
